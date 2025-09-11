@@ -11,4 +11,15 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Print a welcome message
-      run: echo "welcome to our first Github actions workflow!" 
+      run: echo "welcome to our first Github actions workflow!"
+      
+    - name: Checkout Repository
+      uses: actions/checkout@v5.0.0
+
+    - name: List repository files
+      run: ls -la
+      
+    
+    
+
+   
